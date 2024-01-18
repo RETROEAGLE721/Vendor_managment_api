@@ -135,48 +135,4 @@ class vendor_performance(APIView):
         self.change_data.average_response_time = self.data1
         self.data = datetime.now()
         self.change_data.save()
-        
-    
-    def fulfillment_rate(self):
-        pass
-    # def get(self,request,id=None):
-    #     vendor = self.request.query_params.get('vendor')
-    #     if vendor is None:
-    #         self.order_detail = Purchase_order_Model.objects.all()
-    #     else:
-    #         self.order_detail = Purchase_order_Model.objects.filter(vendor = vendor)
-            
-    #     try:
-    #         if id is None :
-    #             self.order_detail = Purchase_order_serializers(self.order_detail,many=True)
-    #             return Response(self.order_detail.data, 200)
-    #         self.order_detail = Purchase_order_Model.objects.get(po_number = id)
-    #         self.order_detail = Purchase_order_serializers(self.order_detail)
-    #         return Response(self.order_detail.data, 200)
-    #     except:
-    #         return Response(status=204) 
-    
-    
-    # def post(self,request):
-    #     self.order_detail = Purchase_order_serializers(data=request.data)
-    #     if self.order_detail.is_valid():      
-    #         self.order_detail.save()
-    #         return Response(self.order_detail.data, 200)
-    #     return Response(self.order_detail.data,304)
-    
-    
-    # def put(self,request,id=None):
-    #     self.order_detail = Purchase_order_Model.objects.get(po_number = id)
-    #     self.order_detail = Purchase_order_serializers(self.order_detail,data=request.data,partial=True)
-    #     if self.order_detail.is_valid():
-    #         self.order_detail.save()
-    #         return Response(self.order_detail.data, 200)
-    #     return Response(self.order_detail.errors,400)
-    
-    
-    # def delete(self,request,id):
-    #     self.order_detail = Purchase_order_Model.objects.get(po_number = id)
-    #     self.order_detail.delete()
-    #     return Response(status=204)
-
 
