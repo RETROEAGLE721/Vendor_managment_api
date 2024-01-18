@@ -5,8 +5,8 @@ from rest_framework.views import Response
 from .models import Historical_Performance_Model,Purchase_order_Model,Vendor_model
 from rest_framework.views import APIView
 from .serializers import Historical_Performance_serializers,Purchase_order_serializers,Vendor_serializers
-# Purchase_order = Purchase_order_Model.objects.all()
-    # Vendors_performance = Historical_Performance_Model.objects.all()
+
+
 class vendors(APIView):
     
     def get(self,request,id=None):
